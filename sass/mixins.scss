@@ -1,0 +1,86 @@
+// Forms
+// Label
+@mixin form_label(){
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+// Inputs
+@mixin form_inputText(){
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 8px 5px;
+
+  &:focus{
+    border-color: #5ABDDE;
+    background-color: #E5F5FA;
+  }
+}
+
+@mixin form_inputNumber(){
+  -moz-appearance: textfield;
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 8px 5px;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &:focus{
+    border-color: #5ABDDE;
+    background-color: #E5F5FA;
+  }
+}
+
+@mixin form_inputSelect(){
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -ms-progress-appearance: none;
+  width: 180px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 7px 5px;
+  position: relative;
+
+  &:focus{
+    border-color: #5ABDDE;
+    background-color: #E5F5FA;
+  }
+
+  option{
+    background-color: #fff;
+    font-size: 16px;
+  }
+}
+
+
+
+// Btn
+@mixin form_submitBtn(){
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #5CB655;
+  border-radius: 5px;
+  padding: 9px 15px;
+
+  &:hover{
+    background-color: #3b7737;
+  }
+}
