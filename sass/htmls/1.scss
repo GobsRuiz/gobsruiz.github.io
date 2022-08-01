@@ -3,6 +3,23 @@
   margin: 0 auto;
   padding: 30px 0;
 
+  ul{
+    background-color: rgb(255, 153, 153);
+    padding: 10px;
+    margin-bottom: 30px;
+
+    li{
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(148, 0, 0);
+      margin-bottom: 5px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
   form{
     // Row
     .form__row{
