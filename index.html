@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +9,447 @@
 </head>
 <body>
 
-  <a href="html/1.html">
-    Form 1
-  </a>
-  <a href="html/2.html">
-    Form 2
-  </a>
-  <a href="html/3.html">
-    Form 3
-  </a>
-  <a href="html/4.html">
-    Form 4
-  </a>
+
+  <div class="container">
+    <div class="formContainer">
+      <div class="formContainer__stepHeader">
+        <div class="formContainer__stepHeader__number formContainer__stepHeader__number--active">
+          <p>1</p>
+          <svg class="formContainer__stepHeader__number__finishedIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"/></svg>
+        </div>
+
+        <hr class="formContainer__stepHeader__separator">
+
+        <div class="formContainer__stepHeader__number">
+          <p>2</p>
+          <svg class="formContainer__stepHeader__number__finishedIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"/></svg>
+        </div>
+
+        <hr class="formContainer__stepHeader__separator">
+
+        <div class="formContainer__stepHeader__number">
+          <p>3</p>
+          <svg class="formContainer__stepHeader__number__finishedIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"/></svg>
+        </div>
+
+        <hr class="formContainer__stepHeader__separator">
+
+        <div class="formContainer__stepHeader__number">
+          <p>4</p>
+          <svg class="formContainer__stepHeader__number__finishedIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"/></svg>
+        </div>
+      </div>
+
+      <ul class="formContainer__message formContainer__message--error" style="display: none;">
+        <li>Nome - mínimo 3 caracteres</li>
+        <li>E-mail - inválido</li>
+        <li>CEP - inválido</li>
+      </ul>
+      
+      <div class="formContainer__stepsFormDivs">
+        <form class="formContainer__form" action="" method="post">
+          <div class="formContainer__form__box">
+            <h3>
+              Dados pessoais:
+            </h3>
+
+            <div class="formContainer__form__row">
+              <div class="formContainer__form__labelInput">
+                <label for="">Nome</label>
+                <input type="text" name="name" class="formContainer__form__labelInput__inputText">
+              </div>
+        
+              <div class="formContainer__form__labelInput">
+                <label for="">CPF/CNPJ</label>
+                <input type="text" name="cpf/cnpj" class="formContainer__form__labelInput__inputText">
+              </div>
+      
+              <div class="formContainer__form__labelInput">
+                <label for="">e-mail</label>
+                <input type="text" name="email" class="formContainer__form__labelInput__inputText">
+              </div>
+            </div>
+      
+            <div class="formContainer__form__row">
+              <div class="formContainer__form__labelInput">
+                <label for="">CEP</label>
+                <input type="text" name="cep" class="formContainer__form__labelInput__inputText">
+              </div>
+        
+              <div class="formContainer__form__labelInput formContainer__form__labelInput--select">
+                <label for="">UF</label>
+                <select name="" id="">
+                  <option selected disabled>Selecione</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Macapá</option>
+                  <option value="AM">Manaus</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Pernambuco</option>
+                  <option value="PI">Paiuí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                </select>
+              </div>
+        
+              <div class="formContainer__form__labelInput">
+                <label for="">Cidade</label>
+                <input type="city" name="name5" class="formContainer__form__labelInput__inputText">
+              </div>
+            </div>
+      
+            <div class="formContainer__form__row">
+              <div class="formContainer__form__labelInput">
+                <label for="">Bairro</label>
+                <input type="text" name="name1" class="formContainer__form__labelInput__inputText">
+              </div>
+        
+              <div class="formContainer__form__labelInput">
+                <label for="">Número</label>
+                <input type="number" name="name2" class="formContainer__form__labelInput__inputText">
+              </div>
+        
+              <div class="formContainer__form__labelInput">
+                <label for="">Complemento</label>
+                <input type="text" name="name3" class="formContainer__form__labelInput__inputText">
+              </div>
+            </div>
+      
+            <div class="formContainer__form__btns">
+              <button class="formContainer__form__btns__submitBtn">
+                Enviar
+              </button>
+            </div>
+          </div>
+
+          <div class="formContainer__form__box">
+            <h3>
+              Identicação do imóvel:
+            </h3>
+
+            <div class="formContainer__form__row">
+              <div class="formContainer__form__labelInput">
+                <label for="">Endereço</label>
+                <input type="text" name="name" class="formContainer__form__labelInput__inputText">
+              </div>
+        
+              <div class="formContainer__form__labelInput">
+                <label for="">Número</label>
+                <input type="text" name="cpf/cnpj" class="formContainer__form__labelInput__inputText">
+              </div>
+      
+              <div class="formContainer__form__labelInput">
+                <label for="">Complemento</label>
+                <input type="text" name="email" class="formContainer__form__labelInput__inputText">
+              </div>
+            </div>
+      
+            <div class="formContainer__form__row">
+              <div class="formContainer__form__labelInput">
+                <label for="">Bairro</label>
+                <input type="text" name="cep" class="formContainer__form__labelInput__inputText">
+              </div>
+
+              <div class="formContainer__form__labelInput">
+                <label for="">CEP</label>
+                <input type="city" name="name5" class="formContainer__form__labelInput__inputText">
+              </div>
+        
+              <div class="formContainer__form__labelInput formContainer__form__labelInput--select">
+                <label for="">Cidade/UF</label>
+                <select name="" id="">
+                  <option selected disabled>Selecione</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Macapá</option>
+                  <option value="AM">Manaus</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Pernambuco</option>
+                  <option value="PI">Paiuí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="formContainer__form__btns">
+              <button class="formContainer__form__btns__submitBtn">
+                Enviar
+              </button>
+              <button class="formContainer__form__btns__backBtn">
+                Voltar
+              </button>
+            </div>
+          </div>
+
+          <div class="formContainer__form__box">
+            <h3>
+              Identificação do Autor do projeto/responsável ténico:
+            </h3>
+
+            <div class="formContainer__form__row">
+              <div class="formContainer__form__labelInput">
+                <label for="">Nome</label>
+                <input type="text" name="name" class="formContainer__form__labelInput__inputText">
+              </div>
+        
+              <div class="formContainer__form__labelInput">
+                <label for="">CPF</label>
+                <input type="text" name="cpf/cnpj" class="formContainer__form__labelInput__inputText">
+              </div>
+      
+              <div class="formContainer__form__labelInput">
+                <label for="">CREA/CAU</label>
+                <input type="text" name="email" class="formContainer__form__labelInput__inputText">
+              </div>
+            </div>
+      
+            <div class="formContainer__form__row">
+              <div class="formContainer__form__labelInput">
+                <label for="">Endereço</label>
+                <input type="text" name="cep" class="formContainer__form__labelInput__inputText">
+              </div>
+
+              <div class="formContainer__form__labelInput">
+                <label for="">Número</label>
+                <input type="city" name="name5" class="formContainer__form__labelInput__inputText">
+              </div>
+
+              <div class="formContainer__form__labelInput">
+                <label for="">Complemento</label>
+                <input type="city" name="name5" class="formContainer__form__labelInput__inputText">
+              </div>
+
+              <div class="formContainer__form__labelInput">
+                <label for="">Inscrição municipal (ISS):</label>
+                <input type="city" name="name5" class="formContainer__form__labelInput__inputText">
+              </div>
+            </div>
+
+            <div class="formContainer__form__row">
+              <div class="formContainer__form__labelInput">
+                <label for="">Bairro</label>
+                <input type="text" name="cep" class="formContainer__form__labelInput__inputText">
+              </div>
+
+              <div class="formContainer__form__labelInput">
+                <label for="">CEP</label>
+                <input type="city" name="name5" class="formContainer__form__labelInput__inputText">
+              </div>
+
+              <div class="formContainer__form__labelInput">
+                <label for="">Cidade</label>
+                <input type="city" name="name5" class="formContainer__form__labelInput__inputText">
+              </div>
+
+              <div class="formContainer__form__labelInput formContainer__form__labelInput--select">
+                <label for="">UF</label>
+                <select name="" id="">
+                  <option selected disabled>Selecione</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Macapá</option>
+                  <option value="AM">Manaus</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Pernambuco</option>
+                  <option value="PI">Paiuí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="formContainer__form__row">
+              <div class="formContainer__form__labelInput">
+                <label for="">Telefone(s)</label>
+                <input type="text" name="cep" class="formContainer__form__labelInput__inputText">
+              </div>
+
+              <div class="formContainer__form__labelInput">
+                <label for="">E-mail</label>
+                <input type="city" name="name5" class="formContainer__form__labelInput__inputText">
+              </div>
+            </div>
+            
+            <div class="formContainer__form__btns">
+              <button class="formContainer__form__btns__submitBtn">
+                Enviar
+              </button>
+              <button class="formContainer__form__btns__backBtn">
+                Voltar
+              </button>
+            </div>
+          </div>
+
+          <div class="formContainer__form__box">
+            <h3>
+              Documentação mínima para análise de projetos
+            </h3>
+
+            <p class="formContainer__form__box__text">
+              <strong>Assunto:</strong>
+              preencher somente 01 lacuna do assunto para abertura do processo
+            </p>
+
+            <div class="formContainer__form__row">
+              <div class="formContainer__form__labelInput formContainer__form__labelInput--select">
+                <label for="">Assunto</label>
+                <select name="" id="" class="formContainer__form__labelInput__subjectInput">
+                  <option selected disabled>Selecione</option>
+                  <option value="a">Certidão de zoneamento</option>
+                  <option value="b">Habite-se</option>
+                  <option value="c">Licença para demolição</option>
+                  <option value="d">Licença para construção de muro frontal até 3 MTS</option>
+                  <option value="e">Reforma simples</option>
+                  <option value="f">Renovação de licença</option>
+                  <option value="g">Mais valia</option>
+                  <option value="h">Acréscimo de área</option>
+                  <option value="i">Desmembramento/remembramento</option>
+                  <option value="J">Licença para construção</option>
+                  <option value="k">Licença para construção de contenção ou muro com mais de 3 MTS</option>
+                  <option value="l">Loteamento</option>
+                  <option value="m">Modificação de projeto</option>
+                  <option value="n">Vistoria e a verbação</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="formContainer__form__row formContainer__form__subjectLine">
+              <div class="formContainer__form__labelInput" data-subject="a b c d e f g h i j k l m n">
+                <label for="">Xerox identidade e CPF/CNPJ</label>
+                <input type="file">
+              </div>
+
+              <div class="formContainer__form__labelInput" data-subject="a b c d e g h i j k l m n">
+                <label for="">Xerox do espelho do IPTU</label>
+                <input type="file">
+              </div>
+
+              <div class="formContainer__form__labelInput" data-subject="a c d e g h i j k l m n">
+                <label for="">4 fotos que identifiquem o imóvel com localização do google</label>
+                <input type="file">
+              </div>
+            </div>
+
+            <div class="formContainer__form__row formContainer__form__subjectLine">
+              <div class="formContainer__form__labelInput" data-subject="a b c d e g h i j k l m n">
+                <label for="">RGI ou certidão atualizada do imóvel</label>
+                <input type="file">
+              </div>
+
+              <div class="formContainer__form__labelInput" data-subject="c d e g h i j k l m n">
+                <label for="">ART/RRT assinada com comprovante de pagamento</label>
+                <input type="file">
+              </div>
+
+              <div class="formContainer__form__labelInput" data-subject="b c d e g h i j k l m n">
+                <label for="">ISS do responsável técnico pelo projeto e execução</label>
+                <input type="file">
+              </div>
+            </div>
+
+            <div class="formContainer__form__row formContainer__form__subjectLine">
+              <div class="formContainer__form__labelInput" data-subject="g h i j k l m n">
+                <label for="">Projeto completo em 01 via (planta baixa, 2 cortes, fachada e situação). Após o cumprimento das exigências, anexar as 03 cópias impressas para aprovação</label>
+                <input type="file">
+              </div>
+              
+              <div class="formContainer__form__labelInput" data-subject="i l n">
+                <label for="">Memorial descritivo</label>
+                <input type="file">
+              </div>
+
+              <div class="formContainer__form__labelInput" data-subject="g">
+                <label for="">Memorial descritivo com valor do imóvel</label>
+                <input type="file">
+              </div>
+            </div>
+
+            <div class="formContainer__form__row formContainer__form__subjectLine">
+              <div class="formContainer__form__labelInput" data-subject="d e k">
+                <label for="">Memorial de cálculo com os custos da obra em 3 vias</label>
+                <input type="file">
+              </div>
+              
+              <div class="formContainer__form__labelInput" data-subject="g">
+                <label for="">Anexos I, II, III - reconhecer firma</label>
+                <input type="file">
+              </div>
+
+              <div class="formContainer__form__labelInput" data-subject="g">
+                <label for="">Certidões de feito cíveis</label>
+                <input type="file">
+              </div>
+            </div>
+
+            <div class="formContainer__form__row formContainer__form__subjectLine">
+              <div class="formContainer__form__labelInput" data-subject="b h m">
+                <label for="">Projeto aprovado anteriormente</label>
+                <input type="file">
+              </div>
+              
+              <div class="formContainer__form__labelInput" data-subject="e">
+                <label for="">Projeto simples (somente planta baixa)</label>
+                <input type="file">
+              </div>
+
+              <div class="formContainer__form__labelInput" data-subject="f">
+                <label for="">Cópia licença anterior</label>
+                <input type="file">
+              </div>
+            </div>
+
+            <div class="formContainer__form__row formContainer__form__subjectLine">
+              <div class="formContainer__form__labelInput" data-subject="k">
+                <label for="">Projeto estrutural</label>
+                <input type="file">
+              </div>
+            </div>
+            
+            <div class="formContainer__form__btns">
+              <button class="formContainer__form__btns__submitBtn">
+                Enviar
+              </button>
+              <button class="formContainer__form__btns__backBtn">
+                Voltar
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/step.js"></script>
   
 </body>
 </html>
