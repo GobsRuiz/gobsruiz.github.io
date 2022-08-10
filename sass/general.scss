@@ -6,13 +6,15 @@
   .formContainer{
     // Message
     &__message{
+      list-style: inside;
+      border-radius: 8px;
       padding: 10px;
       margin-bottom: 30px;
       
       li{
         font-size: 12px;
         font-weight: 600;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         
         &:last-child{
           margin-bottom: 0;
